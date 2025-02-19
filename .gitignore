@@ -1,0 +1,31 @@
+# Diretório do Terraform
+.terraform/
+.terraform.lock.hcl
+
+# Arquivos de estado do Terraform (sensíveis, nunca devem ser versionados)
+terraform.tfstate
+terraform.tfstate.backup
+*.tfstate
+*.tfstate.backup
+
+# Arquivos de variáveis sensíveis
+*.auto.tfvars
+*.tfvars
+
+# Logs e saídas temporárias
+crash.log
+*.log
+
+# Credenciais AWS (se estiverem no projeto, melhor usar o AWS CLI para gerenciar)
+.aws/
+*.pem
+*.key
+
+# Arquivos gerados por IDEs
+.vscode/
+.idea/
+*.iml
+
+# Arquivos desnecessários do sistema operacional
+.DS_Store
+Thumbs.db
